@@ -47,20 +47,30 @@
 .nav .list ul li a {
 
     margin-right: 30px;
-    text-decoration: none;
+    text-decoration:none;
     font-size: 17px;
     color: rgb(72, 70, 70);
     text-shadow: 1px 1px 1px 1px;
 
 }
-.nav .list ul li a:hover::before{
-height: 2px;
-width: 4px;
-background-image: linear-gradient(#007873,orangered);
-transition: color .4s cubic-bezier(.165,.84,.44,1);
 
-
+.nav .list ul li a:hover{
+/* height: 2px;
+width: 4px;*/
+ 
+animation:line 1s ease normal;
+} 
+@keyframes line {
+    from{
+        text-decoration: none;
+    }
+    to{
+        text-decoration: underline;
+        transition: all 3s ease;
+    }
+    
 }
+
 
 
 .nav .list ul {
